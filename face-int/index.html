@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FACE-INT</title>
+<meta name="description" content="Scouting and counter-strategy tool for CS2 teams on FACEIT.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<main>
+  <nav><a href="../">&larr; All projects</a></nav>
+  <h1>FACE-INT</h1>
+  <p class="muted">Scout any CS2 team on FACEIT and get a game plan against them.</p>
+  <span class="tag">In development</span><span class="tag">Python</span><span class="tag">CS2</span><span class="tag">FACEIT</span>
+
+  <p>FACE-INT reads a team's recent FACEIT matches and match demos, builds profiles of how they play, and
+    suggests counter-strategies. Every suggestion comes with the numbers behind it, so you can judge how far to trust it.</p>
+
+  <h2>What it looks at</h2>
+  <ul>
+    <li><b>Map pool:</b> games and win rate per map, with veto suggestions.</li>
+    <li><b>Economy:</b> eco, light, force, half and full buys per side, and what the team does after pistol rounds.</li>
+    <li><b>Players:</b> K/D, ADR, headshot %, opening duels, weapon use, AWP share and a role guess.</li>
+    <li><b>Positions:</b> where each player usually sets up early in the round, and where they get kills and die.</li>
+    <li><b>T side:</b> which site they hit and how fast.</li>
+    <li><b>Utility:</b> repeated grenade lineups, likely one-way smokes and kills through smoke.</li>
+  </ul>
+
+  <h2>Output</h2>
+  <p>A single scouting report per team: a ranked list of counter-strats up top, then the map, economy, player,
+    position and utility breakdowns that back them up.</p>
+
+  <h2>Data</h2>
+  <p>Match history and scoreboards come from the FACEIT Data API. Round-by-round detail comes from match demos.</p>
+  <footer><a href="https://github.com/vandensp">GitHub</a></footer>
+</main>
+</body>
+</html>
