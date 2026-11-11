@@ -3,7 +3,7 @@
 Personal site, published with GitHub Pages at https://vandensp.github.io.
 
 - `index.html`: home page listing projects
-- `face-int/`: page for the FACE-INT project (`counter-strat/` redirects there)
+- `face-int/`: page for the FACE-INT project
 - `assets/style.css`: shared styles
 
 Plain HTML, no build step. `.nojekyll` tells GitHub Pages to serve the files as they are.
