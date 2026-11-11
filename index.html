@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sam's Projects</title>
-<meta name="description" content="Projects by Sam: games, tools and hardware.">
+<meta name="description" content="Projects by Sam: games, tools, security research and hardware.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <main>
   <h1>Sam</h1>
-  <p class="muted">Games, tools and hardware projects.</p>
+  <p class="muted">Games, tools, security research and hardware projects.</p>
 
   <h2>Projects</h2>
   <a class="card" href="face-int/">
@@ -34,12 +34,28 @@
     <span class="tag">Unreal Engine 5</span><span class="tag">C++</span><span class="tag">Voice input</span>
   </a>
 
-  <h2>Earlier work</h2>
+  <h2>Security</h2>
+  <a class="card" href="https://github.com/vandensp/magic_word">
+    <h3>Jurassic Park malware</h3>
+    <p>A Jurassic Park gag written in C: a wrapper shell that makes you mind your manners. Every command has to start
+      with &ldquo;please&rdquo; &mdash; forget, and it unmutes you, cranks the volume and blasts Nedry's
+      &ldquo;ah ah ah, you didn't say the magic word&rdquo; on a loop.</p>
+    <span class="tag">C</span><span class="tag">Linux</span><span class="tag">Malware PoC</span>
+  </a>
+  <a class="card" href="https://github.com/vandensp/reflective-dll">
+    <h3>Reflective DLL injection</h3>
+    <p>Built up step by step, from a bare importer with no loaded library functions all the way to a working reflective
+      DLL injection on Windows.</p>
+    <span class="tag">C</span><span class="tag">Windows</span><span class="tag">Injection</span>
+  </a>
   <a class="card" href="https://github.com/vandensp/BCAonCAN">
     <h3>BCA on CAN</h3>
-    <p>FPGA project on the CAN bus using a Xilinx Zynq board in Vivado, building on earlier thesis work.</p>
-    <span class="tag">FPGA</span><span class="tag">SystemVerilog</span><span class="tag">CAN bus</span>
+    <p>A CAN bus exploit that feeds false values to a single component &mdash; say a car's speed controller &mdash;
+      while staying invisible to the dashboard and without erroring out the bus. Built on a Xilinx Zynq FPGA in Vivado.</p>
+    <span class="tag">CAN bus</span><span class="tag">FPGA</span><span class="tag">Automotive</span>
   </a>
+
+  <h2>Earlier work</h2>
   <a class="card" href="https://github.com/rutantj/comrade-candles-ECE434">
     <h3>Comrade Candles</h3>
     <p>Team embedded-systems project on a BeagleBone: LED strips synced to music, controlled by IR remote or a web page.</p>
