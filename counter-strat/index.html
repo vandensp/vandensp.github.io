@@ -4,17 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Counter Strat</title>
-<meta name="description" content="FACEIT CS2 team scouting and counter-strategy tool.">
+<meta name="description" content="Scouting and counter-strategy tool for CS2 teams on FACEIT.">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <main>
   <nav><a href="../">&larr; All projects</a></nav>
   <h1>Counter Strat</h1>
-  <p class="muted">A personal tool for scouting CS2 teams on FACEIT.</p>
+  <p class="muted">Scout any CS2 team on FACEIT and get a game plan against them.</p>
+  <span class="tag">In development</span><span class="tag">Python</span><span class="tag">CS2</span><span class="tag">FACEIT</span>
 
-  <p>Counter Strat reads a team's recent FACEIT matches and match demos, builds profiles of their habits, and
-    suggests counter-strategies, each backed by the numbers behind it.</p>
+  <p>Counter Strat reads a team's recent FACEIT matches and match demos, builds profiles of how they play, and
+    suggests counter-strategies. Every suggestion comes with the numbers behind it, so you can judge how far to trust it.</p>
 
   <h2>What it looks at</h2>
   <ul>
@@ -26,10 +27,12 @@
     <li><b>Utility:</b> repeated grenade lineups, likely one-way smokes and kills through smoke.</li>
   </ul>
 
-  <h2>Data</h2>
-  <p>Match history and scoreboards come from the FACEIT Data API. Round-by-round detail comes from match demos,
-    parsed locally. Data is used only to produce private scouting reports.</p>
+  <h2>Output</h2>
+  <p>A single scouting report per team: a ranked list of counter-strats up top, then the map, economy, player,
+    position and utility breakdowns that back them up.</p>
 
+  <h2>Data</h2>
+  <p>Match history and scoreboards come from the FACEIT Data API. Round-by-round detail comes from match demos.</p>
   <footer><a href="https://github.com/vandensp">GitHub</a></footer>
 </main>
 </body>
